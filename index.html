@@ -1,38 +1,23 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="https://downbadplanet.com/assets/img/logo.png">
-    <meta name="description" content="Description coming soon after 2.0 update drops">
-    <link rel=“canonical” href="https://downbadplanet.com/“downbadplanet.com”" />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="downbadplanet.com">
-    <meta property="og:title" content="downbadplanet.com" />
-    <meta property="og:description" content="Description coming soon after 2.0 update drops" />
-    <meta property="og:image" content="https://downbadplanet.com/assets/img/logo.png">
-    <meta property="twitter:url" content="downbadplanet.com">
-    <meta property="twitter:title" content="downbadplanet.com">
-    <meta property="twitter:description" content="Description coming soon after 2.0 update drops">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/landing.css">
-    <title>DownBadPlanet</title>
-</head>
-<body>
-    <h1>Site in testing mode.</h1>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
     <script src="https://player.live-video.net/1.13.0/amazon-ivs-player.min.js"></script>
 <video id="video-player" playsinline></video>
 <script>
   if (IVSPlayer.isPlayerSupported) {
     const player = IVSPlayer.create();
     player.attachHTMLVideoElement(document.getElementById('video-player'));
-    player.load("PLAYBACK_URL");
+    player.load("https://6357daf2db29.us-east-1.playback.live-video.net/api/video/v1/us-east-1.098567839582.channel.EGpI0Cql1VdQ.m3u8");
     player.play();
   }
 </script>
-</body>
+  </body>
 </html>
