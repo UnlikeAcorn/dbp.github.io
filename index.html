@@ -21,10 +21,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/landing.css">
     <title>DownBadPlanet</title>
-    <script src="https://player.live-video.net/1.14.0/amazon-ivs-player.min.js"></script>
 </head>
 <body>
     <h1>Site in testing mode.</h1>
-    
+    <script src="https://player.live-video.net/1.13.0/amazon-ivs-player.min.js"></script>
+<video id="video-player" playsinline></video>
+<script>
+  if (IVSPlayer.isPlayerSupported) {
+    const player = IVSPlayer.create();
+    player.attachHTMLVideoElement(document.getElementById('video-player'));
+    player.load("PLAYBACK_URL");
+    player.play();
+  }
+</script>
 </body>
 </html>
